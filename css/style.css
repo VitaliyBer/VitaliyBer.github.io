@@ -505,17 +505,16 @@ input[type="radio"].visually-hidden {
 .page-footer__social {
   width: 250px; }
 
-.learn-text {
-  height: auto;
-  padding-top: 50px; }
-
 .lashes-learn {
   margin: 0;
   padding: 0;
   width: 320px;
   margin: 0 auto;
+  height: auto; }
+
+.learn-text {
   height: auto;
-  padding: 15px 25px; }
+  padding-top: 50px; }
 
 .lashes-learn__wrapper {
   width: 280px; }
