@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"
+    >
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+<header class="page-header">
+    <a class="page-header__logo">
+        <img src="./img/logomak_logo.png" alt="Логотип Lashes"
+             class="page-header__logo-image"
+             width="140"
+             height="120">
+    </a>
+    <nav id="main-nav" class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                    <a href="index.html">Головна</a>
+                </li>
+                <li class="site-list__item site-list__item--active">
+                    <a href="photo.html">Портфоліо</a>
+                </li>
+                <li class="site-list__item ">
+                    <a href="#">Інтернет магазин</a>
+                </li>
+                <li class="site-list__item">
+                    <a href="learn.html">Навчання</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="page-main">
+    <h1 class="visually-hidden">
+        Lashes-market
+    </h1>
+    <section class="title-photo">
+        <div class="title-photo__wrapper">
+            <h2 class="title-caption">Studio <span class="title-caption__min">by</span> Bernik</h2>
+        </div>
+    </section>
+
+    <section class="stats stats-photo">
+        <h2 class="visually-hidden">Портфоліо</h2>
+        <b class="stats__slogan">Фото та відео</b>
+        <p class="stats__intro">Роботи нашої студії</p>
+    </section>
+
+    <article class="block-item__img">
+        <div class="block-item__wrapper ">
+            <h2 class="visually-hidden">
+                Примеры робот
+            </h2>
+            <div class="item-one">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                            srcset="img/photo/3.png 1x,
+                                    img/photo/3@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="img/photo/3.png 1x,
+                                    img/photo/3@2x.png 2x">
+                    <img src="img/photo/3-mobile.png"
+                         srcset="img/photo/3-mobile@2x.png 2x"
+
+                         alt="Примеры наших робот"
+                         class="item-one__img">
+                </picture>
+                <blockquote class="block-item__text">Нарощення вій 4-5D</blockquote>
+            </div>
+        </div>
+    </article>
+
+    <article class="block-item__imgs">
+            <h2 class="visually-hidden">
+                Примеры робот
+            </h2>
+            <div class="item-many">
+                <div class="block-item__item block-item__size" >
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo/1.png 1x,
+                                    img/photo/1@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                srcset="img/photo/1.png 1x,
+                                    img/photo/1@2x.png 2x">
+                        <img src="img/photo/1-mobile.png"
+                             srcset="img/photo/1-mobile@2x.png 2x"
+                             alt="Примеры робот"
+                             class="item-one__img"
+                             onclick="window.open(this.src,this.target,'width= 500,height=600,scrollbars=1,top=150,left='+(window.screen. width/2-250));return false;"
+
+                        >
+                    </picture>
+                    <blockquote class="block-item__text">Об'ємне нарощення 9-12D</blockquote>
+                </div>
+                <div class="block-item__item block-item__size">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo/2.png 1x,
+                                    img/photo/2@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                srcset="img/photo/2.png 1x,
+                                    img/photo/2@2x.png 2x">
+                        <img src="img/photo/2%20-mobile.png"
+                             srcset="img/photo/2-mobile@2x.png 2x"
+                             alt="Примеры робот"
+                             class="item-one__img"
+                             onclick="window.open(this.src,this.target,'width= 500,height=600,scrollbars=1,top=150,left='+(window.screen. width/2-250));return false;"
+
+                        >
+                    </picture>
+                    <blockquote class="block-item__text">Нарощення вій 4-5D</blockquote>
+                </div>
+                <div class="block-item__item block-item__size">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo/4.png 1x,
+                                    img/photo/4@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                srcset="img/photo/4.png 1x,
+                                    img/photo/4@2x.png 2x">
+                        <img src="img/photo/4-mobile.png"
+                             srcset="img/photo/4-mobile@2x.png"
+                             alt="Примеры робот"
+                             class="item-one__img"
+                             onclick="window.open(this.src,this.target,'width= 500,height=600,scrollbars=1,top=150,left='+(window.screen. width/2-250));return false;"
+                        >
+                    </picture>
+                    <blockquote class="block-item__text">Віковий клієнт, 4-5D</blockquote>
+                </div>
+                <div class="block-item__item block-item__size">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo/5.png 1x,
+                                    img/photo/5@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                srcset="img/photo/5.png 1x,
+                                    img/photo/5@2x.png 2x">
+                        <img src="img/photo/5-mobile.png"
+                             srcset="img/photo/5-mobile@2x.png"
+                             alt="Примеры робот"
+                             class="item-one__img"
+                             onclick="window.open(this.src,this.target,'width= 500,height=600,scrollbars=1,top=150,left='+(window.screen. width/2-250));return false;"
+                        >
+                    </picture>
+                    <blockquote class="block-item__text">Ніжне 2D для тих хто любить natural</blockquote>
+                </div>
+                <div class="block-item__item block-item__size">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo/6.png 1x,
+                                    img/photo/6@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                srcset="img/photo/6.png 1x,
+                                    img/photo/6@2x.png 2x">
+                        <img src="img/photo/6-mobile%20.png"
+                             srcset="img/photo/6-mobile@2x.png"
+                             alt="Примеры робот"
+                             class="item-one__img"
+                             onclick="window.open(this.src,this.target,'width= 500,height=600,scrollbars=1,top=150,left='+(window.screen. width/2-250));return false;"
+                        >
+
+                    </picture>
+                    <blockquote class="block-item__text">Голівудський об'єм</blockquote>
+                </div>
+                <div class="block-item__item block-item__size">
+                    <picture>
+                        <source media="(min-width: 1200px)"
+                                srcset="img/photo/3.png 1x,
+                                    img/photo/3@2x.png 2x">
+                        <source media="(min-width: 768px)"
+                                srcset="img/photo/3.png 1x,
+                                    img/photo/3@2x.png 2x">
+                        <img src="img/photo/3-mobile%20.png"
+                             srcset="img/photo/3-mobile@2x.png"
+                             alt="Примеры робот"
+                             class="item-one__img"
+                             onclick="window.open(this.src,this.target,'width= 500,height=600,scrollbars=1,top=150,left='+(window.screen. width/2-250));return false;"
+                        >
+                    </picture>
+                    <blockquote class="block-item__text">НАРОЩЕННЯ ВІЙ 4-5D</blockquote>
+                </div>
+        </div>
+    </article>
+
+    <!--<article class="block-item__video">-->
+        <!--<h2 class="visually-hidden">Видео робот</h2>-->
+        <!--<video width="320" height="300" controls>-->
+            <!--<source src="http://placehold.it/320x300/" type="video/mp4">-->
+            <!--<source src="http://placehold.it/320x300/" type="video/ogg">-->
+
+
+        <!--</video>-->
+    <!--</article>-->
+
+
+</main>
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+            <p><b class="contacts__title">
+                Studio by Bernik
+            </b></p>
+            <a href="tel:067-382-31-67" class="contacts__phone"><span class="contacts__phone-mobile">
+            Тел.:</span> +38 (067) 382 31 67
+            </a>
+        </div>
+
+        <div class="page-footer__social social">
+            <ul class="social__list">
+                <li class="social__item"><a href="#" class="social__link social__link--facebook">
+                    <span class="visually-hidden">Фейсбук</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" role="img"
+                         >
+                        <path style="fill:#8A9C8F;"
+                              d="M18.896 20.12h1.758v-1.708c0-.753.02-1.915.566-2.635.576-.762
+                      1.368-1.28 2.73-1.28 2.218 0 3.15.316 3.15.316l-.438
+                      2.605s-.73-.212-1.417-.212c-.684 0-1.296.245-1.296.93v1.985h2.803l-.194
+                      2.547h-2.61v8.84h-3.297v-8.84h-1.758V20.12z"/>
+                    </svg>
+                </a>
+                </li>
+                <li class="social__item">                    <!--<a href="img/photo/6.png" target="_blank" onclick="window.open(this.href,this.target,'width= 500,height=600,scrollbars=1,top=150,left='+(window.screen. width/2-250));return false;">-->
+
+                    <a href="#" class="social__link social__link--instagram">
+                        <span class="visually-hidden">Інстаграм</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" role="img"
+                             >
+                            <path style="fill:#8A9C8F;"
+                                  d="M29.76 29.03v-7.373h-1.537c.152.48.23.975.23 1.49
+                              0 .958-.243 1.838-.73 2.647-.485.807-1.146 1.447-1.98
+                              1.918-.834.47-1.744.705-2.73.705-1.495
+                              0-2.773-.514-3.835-1.543-1.062-1.027-1.593-2.27-1.593-3.726
+                              0-.517.076-1.013.228-1.49H16.21v7.373c0 .2.065.37.2.5.13.14.296.2.494.2H29.07c.188
+                              0 .352-.06.488-.2s.202-.3.202-.49zm-3.233-6.064c0-.94-.343-1.743-1.03-2.406-.686-.664-1.515-.996-2.486-.996-.96
+                              0-1.78.332-2.47.996-.68.663-1.03 1.466-1.03 2.406 0 .942.35 1.743 1.03 2.407s1.51.996 2.48.996c.975 0 1.8-.34 2.49-1s1.03-1.47 1.03-2.41zm3.233-4.097v-1.88c0-.22-.076-.4-.23-.56-.15-.158-.336-.235-.556-.235h-1.98c-.22 0-.406.08-.558.233-.15.155-.228.34-.228.552v1.876c0 .22.076.404.228.556s.337.23.558.23h1.98c.22 0 .406-.078.557-.23.16-.15.23-.338.23-.558zm1.98-2.37v12.99c0 .61-.22 1.14-.66 1.58-.44.44-.967.66-1.582.66H16.502c-.614 0-1.142-.22-1.582-.66-.44-.44-.66-.97-.66-1.586V16.5c0-.614.22-1.142.66-1.582.44-.44.967-.66 1.582-.66h12.996c.615 0 1.14.22 1.582.66.44.44.66.967.66 1.58z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Розработано:</b>
+            <a href="#" class="copyright__link">2018р.</a>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+        $('.main-nav__toggle').on("click", function () {
+            if ($('#main-nav').hasClass('main-nav--closed')) {
+                $('.main-nav')
+                    .addClass('main-nav--opened')
+                    .removeClass('main-nav--closed')
+                    .animate({top: -240}, 300)
+                    .animate({top: 0}, 300);
+
+            }else {
+                $('.main-nav')
+                    .addClass('main-nav--closed')
+                    .removeClass('main-nav--opened')
+                    .animate({top: 240}, 300)
+                    .animate({top: 0}, 300);
+
+            }
+        })
+    })
+</script>
+</body>
+</html>
