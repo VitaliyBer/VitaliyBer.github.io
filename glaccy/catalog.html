@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html class="document" lang="ru">
+
+<head>
+  <meta property="og:image" content="img/content/og-image.jpg">
+  <meta property="og:image:height" content="473">
+  <meta property="og:image:width" content="903">
+  <meta property="og:url" content="https://kasimaru.github.io/gllacy/">
+  <meta property="og:title" content="Крафтовое мороженое &laquo;Глэсси&raquo;">
+  <meta property="og:description" content="Элитное мороженое на развес. Ништяк!">
+
+  <link rel="manifest" href="favicons/manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <meta name="theme-color" content="#7a9c89">
+
+  <meta charset="utf-8">
+  <link rel="preload" href="fonts/roboto.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/robotomedium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/robotobold.woff2" as="font" type="font/woff2">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Каталог | Gllacy</title>
+</head>
+
+<body class="page page--default-bg">
+  <div class="page__wrapper">
+    <header class="header container">
+      <div class="header__main-content">
+
+        <nav class="navigation">
+          <a class="navigation__logo" href="index.html">
+            <img class="navigation__image"
+              src="img/content/logo.svg"
+              width="154" height="64"
+              alt="Gllacy Shop - магазин крафтового мороженого">
+          </a>
+
+          <div class="navigation__wrapper">
+            <ul class="navigation__list navigation__list--main-links">
+              <li class="navigation__item navigation__item--catalog">
+                <a class="navigation__link navigation__link--current">
+                  <span>Каталог</span>
+                </a>
+
+                <ul class="navigation__dropdown dropdown">
+                  <li class="dropdown__item">
+                    <a class="dropdown__link dropdown__link--main" href="#">
+                      <span>Новинки</span>
+                    </a>
+                  </li>
+
+                  <li class="dropdown__item">
+                    <a class="dropdown__link dropdown__link--current">
+                      <span>Сливочное</span>
+                    </a>
+                  </li>
+
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <span>Щербеты</span>
+                    </a>
+                  </li>
+
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <span>Фруктовый лед</span>
+                    </a>
+                  </li>
+
+                  <li class="dropdown__item">
+                    <a class="dropdown__link" href="#">
+                      <span>Мелорин</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  <span>Доставка и оплата</span>
+                </a>
+              </li>
+
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  <span>О Компании</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="navigation__list navigation__list--user-links">
+              <li class="navigation__item navigation__item--search">
+                <a class="navigation__link navigation__link--magnify navigation__link--user-links"
+                  href="#">
+                  <svg class="navigation__icon"
+                    width="21" height="20">
+                    <title>Поиск</title>
+                    <use xlink:href="img/icons/sprite.svg#icon-magnify"></use>
+                  </svg>
+                </a>
+
+                <form class="navigation__search" name="search">
+                  <div class="text-input">
+                    <input class="text-input__field"
+                      type="search"
+                      id="product-search"
+                      required>
+                    <label class="text-input__label" for="product-search">Что ищем?</label>
+                  </div>
+                </form>
+              </li>
+
+              <li class="navigation__item navigation__item--login">
+                <a class="navigation__link navigation__link--user-links" href="#">
+                  <svg class="navigation__icon navigation__icon--spaced"
+                    width="21" height="20">
+                    <use xlink:href="img/icons/sprite.svg#icon-enter"></use>
+                  </svg>
+                  Вход
+                </a>
+
+                <form class="navigation__login-form login-form"
+                  name="login"
+                  method="post"
+                  autocomplete="on">
+                  <h4 class="visually-hidden">
+                    Пожалуйста, введите электронную почту и пароль или зарегистрируйтесь
+                  </h4>
+                  <div class="login-form__input text-input">
+                    <input class="text-input__field"
+                      type="email"
+                      name="email"
+                      id="email"
+                      required>
+                    <label class="text-input__label" for="email">Электронная почта</label>
+                  </div>
+
+                  <div class="login-form__input text-input">
+                    <input class="text-input__field"
+                      type="text"
+                      name="pass"
+                      id="pass"
+                      required>
+                    <label class="text-input__label" for="pass">Пароль</label>
+                  </div>
+
+                  <div class="login-form__submit-section">
+                    <button class="login-form__btn btn" type="submit">Войти</button>
+                    <div class="login-form__links">
+                      <a class="login-form__link" href="#">Забыли пароль?</a>
+                      <a class="login-form__link" href="#">Новая регистрация</a>
+                    </div>
+                  </div>
+                </form>
+              </li>
+
+              <li class="navigation__item navigation__item--orders">
+                <a class="navigation__link navigation__link--cart navigation__link--user-links"
+                  href="#">
+                  <svg class="navigation__icon navigation__icon--spaced"
+                    width="21" height="20">
+                    <title>Корзина</title>
+                    <use xlink:href="img/icons/sprite.svg#icon-bin"></use>
+                  </svg>
+                  Пусто
+                </a>
+
+                <table class="navigation__orders orders">
+                  <thead class="visually-hidden">
+                  <tr>
+                    <th>Отменить выбор</th>
+                    <th>Миниатюра мороженого</th>
+                    <th>Название мороженого</th>
+                    <th>Вес</th>
+                    <th>Стоимость</th>
+                  </tr>
+                  </thead>
+
+                  <tbody class="orders__main">
+                  <tr class="orders__row">
+                    <td class="orders__data orders__data--without-padding">
+                      <button class="orders__discard" type="button">
+                        <span class="visually-hidden">Отмена</span>
+                      </button>
+                    </td>
+                    <td class="orders__data orders__data--without-padding">
+                      <img class="orders__image"
+                        src="img/content/small-ice-cream.png"
+                        width="33" height="33"
+                        alt="Миниатюра мороженого">
+                    </td>
+                    <td class="orders__data">
+                      <p class="orders__name">
+                        Пломбир с апельсиновым джемом
+                      </p>
+                    </td>
+                    <td class="orders__data orders__amount">
+                      <span class="orders__weight">1,5 кг</span>
+                      х
+                      <span class="orders__rate">200 руб.</span>
+                    </td>
+                    <td class="orders__data orders__price">300 руб.</td>
+                  </tr>
+
+                  <tr class="orders__row">
+                    <td class="orders__data orders__data--without-padding">
+                      <button class="orders__discard" type="button">
+                        <span class="visually-hidden">Отмена</span>
+                      </button>
+                    </td>
+                    <td class="orders__data orders__data--without-padding">
+                      <img class="orders__image"
+                        src="img/content/small-ice-pink.png"
+                        width="33" height="33"
+                        alt="Миниатюра мороженого">
+                    </td>
+                    <td class="orders__data">
+                      <p class="orders__name">
+                        Клубничный пломбир с присыпкой из белого шоколада
+                      </p>
+                    </td>
+                    <td class="orders__data orders__amount">
+                      <span class="orders__weight">1,5 кг</span>
+                      х
+                      <span class="orders__rate">300 руб.</span>
+                    </td>
+                    <td class="orders__data orders__price">450 руб.</td>
+                  </tr>
+                  </tbody>
+
+                  <tfoot class="orders__foot">
+                  <tr class="orders__row orders__row--foot">
+                    <td class="orders__total">Итого:
+                      <span>750 руб.</span>
+                    </td>
+                  </tr>
+
+                  <tr class="orders__row orders__row--foot">
+                    <td class="orders__submit">
+                      <button class="btn" type="submit">Оформить заказ</button>
+                    </td>
+                  </tr>
+                  </tfoot>
+                </table>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="header__secondary-content">
+        <section class="header__info">
+          <h4 class="visually-hidden">Время работы и контактный телефон:</h4>
+          <p class="header__para">С 10 до 20, ежедневно</p>
+          <a class="header__tel" href="tel:+7-812-450-25-25">8 812 450-25-25</a>
+        </section>
+      </div>
+    </header>
+
+    <main class="main main--with-btm-border container">
+      <section class="crumbs">
+        <ul class="crumbs__list">
+          <li class="crumbs__item">
+            <a class="crumbs__link" href="index.html">Главная</a>
+          </li>
+
+          <li class="crumbs__item">
+            <a class="crumbs__link" href="#">Каталог</a>
+          </li>
+
+          <li class="crumbs__item">
+            <a class="crumbs__link">Сливочное</a>
+          </li>
+        </ul>
+        <h1 class="crumbs__heading">Сливочное мороженое</h1>
+      </section>
+
+      <form class="filter"
+        name="icecream_filter"
+        action="#"
+        method="get">
+
+        <div class="filter__row">
+          <div class="filter__col">
+            <h3 class="filter__heading">Сортировка:</h3>
+            <div class="filter__select select">
+              <select class="select__inner"
+                name="sorting_rule"
+                id="sorting__rule"
+                title="Сортировка">
+                <option class="filter__option" value="popular">по популярности</option>
+                <option class="filter__option" value="beautiful">по красивости</option>
+                <option class="filter__option" value="sweet">по сладости</option>
+                <option class="filter__option" value="sour">по кислости</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter__col">
+            <h3 class="filter__heading">Цена: 100 руб. – 500 руб.</h3>
+            <div class="filter__range range">
+              <div class="range__field">
+                <div class="range__track">
+                  <div class="range__track range__track--value"></div>
+                  <button class="range__btn range__btn--from" type="button">
+                    <span class="visually-hidden">Значение от</span>
+                  </button>
+                  <button class="range__btn range__btn--to" type="button">
+                    <span class="visually-hidden">Значение до</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter__col">
+            <h3 class="filter__heading">Жирность:</h3>
+            <fieldset class="filter__field">
+              <label class="radio">
+                <input class="radio__input"
+                  type="radio"
+                  name="fat_amount"
+                  value="0">
+                <span class="radio__label">0%</span>
+              </label>
+
+              <label class="radio">
+                <input class="radio__input"
+                  type="radio"
+                  name="fat_amount"
+                  value="10">
+                <span class="radio__label">до 10%</span>
+              </label>
+
+              <label class="radio">
+                <input class="radio__input"
+                  type="radio"
+                  name="fat_amount"
+                  value="30">
+                <span class="radio__label">до 30%</span>
+              </label>
+
+              <label class="radio">
+                <input class="radio__input"
+                  type="radio"
+                  name="fat_amount"
+                  value="100">
+                <span class="radio__label">выше 30%</span>
+              </label>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="filter__row">
+          <div class="filter__col filter__col--last">
+            <h3 class="filter__heading">Наполнители:</h3>
+            <fieldset class="filter__field">
+              <label class="checkbox">
+                <input class="checkbox__input"
+                  type="checkbox"
+                  name="filler"
+                  value="chocolate">
+                <span class="checkbox__label">шоколадные</span>
+              </label>
+
+              <label class="checkbox">
+                <input class="checkbox__input"
+                  type="checkbox"
+                  name="filler"
+                  value="sugar">
+                <span class="checkbox__label">сахарные присыпки</span>
+              </label>
+
+              <label class="checkbox">
+                <input class="checkbox__input"
+                  type="checkbox"
+                  name="filler"
+                  value="fruits">
+                <span class="checkbox__label">фрукты</span>
+              </label>
+
+              <label class="checkbox">
+                <input class="checkbox__input"
+                  type="checkbox"
+                  name="filler"
+                  value="syrup">
+                <span class="checkbox__label">сиропы</span>
+              </label>
+
+              <label class="checkbox">
+                <input class="checkbox__input"
+                  type="checkbox"
+                  name="filler"
+                  value="jam">
+                <span class="checkbox__label">джемы</span>
+              </label>
+            </fieldset>
+          </div>
+
+          <button class="filter__submit" type="submit">Применить</button>
+        </div>
+      </form>
+
+      <section class="showcase">
+        <h3 class="visually-hidden">Сорта мороженого:</h3>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/1.webp">
+              <img class="card__image"
+                src="img/content/1.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">310</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочно-кофейное с кусочками шоколада</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/2.webp">
+              <img class="card__image"
+                src="img/content/2.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">380</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/3.webp">
+              <img class="card__image"
+                src="img/content/3.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">355</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочное крем-брюле с карамельной подливкой</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/4.webp">
+              <img class="card__image"
+                src="img/content/4.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">415</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочное с брусничным джемом</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/5.webp">
+              <img class="card__image"
+                src="img/content/5.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">325</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочно-черничное с цельными ягодами черники</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/6.webp">
+              <img class="card__image"
+                src="img/content/6.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">410</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочно-лимонное с карамельной присыпкой</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/7.webp">
+              <img class="card__image"
+                src="img/content/7.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">375</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочное с шоколадной стружкой</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/8.webp">
+              <img class="card__image"
+                src="img/content/8.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">320</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочно-ванильное с кусочками шоколада</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/9.webp">
+              <img class="card__image"
+                src="img/content/9.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">440</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочное с ментоловым сиропом</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/10.webp">
+              <img class="card__image"
+                src="img/content/10.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">435</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочное с кусочками черного шоколада</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/11.webp">
+              <img class="card__image"
+                src="img/content/11.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">355</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+
+        <article class="card showcase__card">
+          <h4 class="card__name">
+            <a class="card__link" href="#">
+              <span>Сливочное с мятным сиропом</span>
+            </a>
+          </h4>
+
+          <div class="card__inner">
+            <picture>
+              <source type="image/webp" srcset="img/content/12.webp">
+              <img class="card__image"
+                src="img/content/12.png"
+                width="267" height="267"
+                alt="Изображение мороженого">
+            </picture>
+
+            <p class="card__price">
+              <span class="card__cost">420</span>
+              <svg class="card__rouble"
+                width="31" height="36">
+                <title>Рублей</title>
+                <use xlink:href="img/icons/sprite.svg#icon-ruble"></use>
+              </svg>
+              <span class="card__kilos">/кг</span>
+            </p>
+          </div>
+
+          <div class="card__overlay">
+            <button class="card__btn btn" type="button">Быстрый просмотр</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="pagination">
+        <h3 class="visually-hidden">Ссылки на другие страницы каталога</h3>
+        <ul class="pagination__list">
+
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--arrow pagination__link--prev pagination__link--disabled" href="#">
+              <span class="visually-hidden">Предыдущие страницы></span>
+            </a>
+          </li>
+
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--current" href="#">1</a>
+          </li>
+
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">5</a>
+          </li>
+
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--arrow pagination__link--next" href="#">
+              <span class="visually-hidden">Следующие страницы</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer container">
+    <div class="footer__col footer__col--small">
+      <ul class="socials footer__socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials__icon"
+              width="32" height="32">
+              <title>Твиттер</title>
+              <use xlink:href="img/icons/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials__icon"
+              width="32" height="32">
+              <title>Инстаграм</title>
+              <use xlink:href="img/icons/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials__icon"
+              width="32" height="32">
+              <title>Фейсбук</title>
+              <use xlink:href="img/icons/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg class="socials__icon"
+              width="32" height="32">
+              <title>Вконтакте</title>
+              <use xlink:href="img/icons/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__col footer__col--large">
+      <section class="footer__info">
+        <h3 class="visually-hidden">Информация о производителе</h3>
+        <ul class="footer__documents">
+          <li class="footer__document footer__document--important">
+            <a class="footer__link" href="#">
+              Для поставщиков
+            </a>
+            <svg class="footer__heart" width="15" height="13">
+              <use xlink:href="img/icons/sprite.svg#icon-heart"></use>
+            </svg>
+          </li>
+
+          <li class="footer__document">
+            <a class="footer__link" href="#">
+              О производстве
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer__documents">
+          <li class="footer__document">
+            <a class="footer__link" href="#">
+              Наши документы
+            </a>
+          </li>
+
+          <li class="footer__document">
+            <a class="footer__link" href="#">
+              Экологические стандарты
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="footer__col footer__col--small">
+      <section class="academy-logo footer__logo">
+        <img class="academy-logo__image"
+          src="img/content/academy-logo.svg"
+          width="108" height="38"
+          alt="HTML Academy">
+        <p class="academy-logo__info">Сделано в
+          <a class="academy-logo__link" href="#">HTML Academy</a>
+          © 2017
+        </p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="vendor/picturefill.min.js"></script>
+  <script src="vendor/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+</body>
+</html>
